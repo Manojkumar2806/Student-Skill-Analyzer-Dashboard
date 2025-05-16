@@ -1,0 +1,86 @@
+/* Card container */
+.custom-card {
+  background: rgba(255, 255, 255, 0.95); /* Slightly translucent white */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(32, 201, 151, 0.2); /* Subtle teal border */
+  backdrop-filter: blur(4px); /* Subtle glass effect */
+}
+
+/* Table */
+.custom-table {
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Table headers */
+.custom-table th {
+  background: #2971924d; /* Dark translucent */
+  color: #d1d4dc; /* Light gray */
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 1rem;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2px solid #20c997; /* Teal underline */
+  transition: background 0.3s ease;
+}
+
+/* Table cells */
+.custom-table td {
+  font-size: 0.9rem;
+  color: #212529;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  vertical-align: middle;
+}
+
+/* Feedback cell */
+.custom-table .feedback-cell {
+  background: rgba(32, 201, 151, 0.05); /* Light teal background */
+  border-left: 3px solid #20c997; /* Teal accent */
+  font-style: italic;
+  color: #343a40;
+}
+
+/* Hover effect */
+.custom-table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+  background: rgba(32, 201, 151, 0.1); /* Teal tint */
+  transform: translateY(-1px);
+}
+
+/* Alternating rows */
+.custom-table tbody tr:nth-child(even) {
+  background: rgba(245, 245, 245, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .custom-card {
+    border-radius: 8px;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
+
+  .custom-table .feedback-cell {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .table-responsive {
+    max-height: 400px; /* Prevent overflow */
+    overflow-x: auto;
+  }
+}
