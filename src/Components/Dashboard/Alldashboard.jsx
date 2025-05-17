@@ -98,7 +98,7 @@ const KpiCard = ({ title, value, color, totalStudents }) => {
 
   return (
     <div
-      className="card shadow border-0 container-fluid kpi-card transition-all"
+      className="card shadow border-0 container kpi-card transition-all"
       style={{ transform: isHovered ? "translateY(-5px)" : "none" }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -155,6 +155,7 @@ const TopStudentsTable = ({ data }) => {
                 <th scope="col">Name</th>
                 <th scope="col">Roll Number</th>
                 <th scope="col">Total Marks</th>
+                <th scope="col">Class Name</th>
               </tr>
             </thead>
             <tbody>
@@ -163,6 +164,7 @@ const TopStudentsTable = ({ data }) => {
                   <td>{student["First Name"]}</td>
                   <td>{student.USN}</td>
                   <td>{student.Total}</td>
+                  <td>{student["ClassName"]}</td>
                 </tr>
               ))}
             </tbody>

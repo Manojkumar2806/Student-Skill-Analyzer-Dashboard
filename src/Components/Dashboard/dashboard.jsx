@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import * as XLSX from 'xlsx';
 import Alldashboard from './Alldashboard';
+import Traings from './Traings';
 
 const Dashboard = () => {
   const [combinedData, setCombinedData] = useState([]);
@@ -142,7 +143,7 @@ const Dashboard = () => {
 
       {/* Navigation tabs */}
       <ul className="nav nav-tabs" aria-label="Dashboard views">
-        {['table', 'dashboard'].map((tab) => (
+        {['table', 'dashboard', 'Traings'].map((tab) => (
           <li className="nav-item" key={tab}>
             <button
               className={`nav-link ${activeTab === tab ? 'active' : ''}`}
@@ -186,6 +187,9 @@ const Dashboard = () => {
 
         {/* Dashboard view */}
         {activeTab === 'dashboard' && <Alldashboard data={combinedData} />}
+
+        {/* Traings view */}
+        {activeTab === 'Traings' && <Traings data={combinedData} />}
       </div>
     </div>
   );
