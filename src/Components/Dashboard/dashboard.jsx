@@ -143,7 +143,7 @@ const Dashboard = () => {
 
       {/* Navigation tabs */}
       <ul className="nav nav-tabs" aria-label="Dashboard views">
-        {['table', 'dashboard', 'Traings'].map((tab) => (
+        {['table', 'dashboard', 'Trainings', 'Cerificates'].map((tab) => (
           <li className="nav-item" key={tab}>
             <button
               className={`nav-link ${activeTab === tab ? 'active' : ''}`}
@@ -189,7 +189,13 @@ const Dashboard = () => {
         {activeTab === 'dashboard' && <Alldashboard data={combinedData} />}
 
         {/* Traings view */}
-        {activeTab === 'Traings' && <Traings data={combinedData} />}
+        {activeTab === 'Trainings' && <Traings data={combinedData} />}
+
+        {/* Certificates view */}
+        {activeTab === 'Cerificates' && 
+          <div className='container mt-5 vh-100'>               
+              <p className="text-center fst-italic">Coming Soon...</p>          
+          </div>}
       </div>
     </div>
   );
