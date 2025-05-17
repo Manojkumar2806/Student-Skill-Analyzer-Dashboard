@@ -1,5 +1,16 @@
 # 🎓 Student Skill Analyzer Dashboard 📊
 
+
+
+
+<p>
+  <img src="https://img.shields.io/badge/ReactJS-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Dashboard-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  <img src="https://img.shields.io/badge/Recharts-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Live%20Data-28A745?style=for-the-badge&logo=google-sheets&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google%20Sheets%20API-34A853?style=for-the-badge&logo=google-sheets&logoColor=white" />
+</p>
+
 ## 📘 Project Description
 
 **Student Skill Analyzer Dashboard** is a smart, responsive, React-based analytics tool that empowers educators with **live, visual, and real-time** insights into student performance. It supports three core segments — **All Students**, **CSD A**, and **CSD B**, each featuring two modes: **Table View** and **Dashboard View**. 
